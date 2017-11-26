@@ -1,2 +1,2 @@
 # finnder-demo
-Demo project for Finnder at Junction 2017
+The demo website for Finnder at Junction 2017.
