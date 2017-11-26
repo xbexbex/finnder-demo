@@ -1,0 +1,22 @@
+@import '~@angular/material/theming';
+@include mat-core();
+$custom-blue: ( 50: #e2e3ee, 100: #b7bad5, 200: #878cb9, 300: #565e9d, 400: #323c88, 500: #0e1973, 600: #0c166b, 700: #0a1260, 800: #080e56, 900: #040843, A100: #787dff, A200: #454cff, A400: #121bff, A700: #000af7, contrast: ( 50: #000000, 100: #000000, 200: #000000, 300: #ffffff, 400: #ffffff, 500: #ffffff, 600: #ffffff, 700: #ffffff, 800: #ffffff, 900: #ffffff, A100: #000000, A200: #ffffff, A400: #ffffff, A700: #ffffff, ));
+$custom-purple: ( 50: #f7e9f3, 100: #ecc8e2, 200: #e0a3cf, 300: #d37ebc, 400: #c963ad, 500: #c0479f, 600: #ba4097, 700: #b2378d, 800: #aa2f83, 900: #9c2072, A100: #ffd7f1, A200: #ffa4de, A400: #ff71cc, A700: #ff58c3, contrast: ( 50: #000000, 100: #000000, 200: #000000, 300: #000000, 400: #000000, 500: #ffffff, 600: #ffffff, 700: #ffffff, 800: #ffffff, 900: #ffffff, A100: #000000, A200: #000000, A400: #000000, A700: #000000, ));
+$finnder-primary: mat-palette($custom-blue);
+$finnder-accent: mat-palette($custom-purple, A200, A100, A400);
+// The warn palette is optional (defaults to red).
+$finnder-warn: mat-palette($mat-red);
+// Create the theme object (a Sass map containing all of the palettes).
+$finnder-theme: mat-light-theme($finnder-primary, $finnder-accent, $finnder-warn);
+.color-primary {
+  color: mat-color($finnder-primary);
+}
+
+.color-accent {
+  color: mat-color($finnder-accent);
+}
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($finnder-theme);

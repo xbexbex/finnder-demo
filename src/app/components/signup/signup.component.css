@@ -1,0 +1,73 @@
+.main-container {
+  padding-top: 5rem;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.mat-button-toggle {
+  color: rgba(0, 0, 0, 0.774);
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.171);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.mat-button-toggle-checked {
+  background-color: #BE499C;
+  color: white;
+}
+
+.title-container {
+  font-size: 1.5rem;
+  justify-content: center;
+  max-width: 40rem;
+  margin: auto;
+  color: #0D1973;
+}
+
+.subheading-container {
+  margin: auto;
+  margin-top: -2.2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.514);
+  max-width: 40rem;
+  justify-content: flex-end;
+}
+
+.interest-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(97, 97, 143);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  max-width: 45rem;
+  margin: auto;
+}
+
+.next-button-container {
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 47rem;
+  margin-bottom: 5rem;
+  padding-bottom: 19rem;
+}
+
+.next-button {
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: flex-end;
+  height: 3rem;
+}

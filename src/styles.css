@@ -1,0 +1,61 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    background-image: url("./assets/images/background.jpg");
+    padding: 0;
+    margin: 0;
+}
+
+.style-font {
+    font-family: 'Architects Daughter', cursive;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mat-button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.first {
+    margin-top: 2.8rem;
+}
+
+.small {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.layer {
+    background-color: rgba(248, 247, 216, 0.226);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }

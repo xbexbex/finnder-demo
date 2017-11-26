@@ -1,0 +1,81 @@
+<div class="main-container">
+  <div class="title-container">
+    <h2>Hi Petja!</h2>
+  </div>
+  <div class="subheading-container">
+    <h1 class="style-font">We think you could be interested in this</h1>
+  </div>
+  <div class="slide-container">
+    <div [@firstStateFlyIn]="firstSlideState" [ngStyle]="{ 'z-index': firstZindex }" class=first-slide-div>
+      <div class="image-div">
+        <img class="show-image img-effect" src="../../assets/images/Ljubljana.jpg" />
+      </div>
+      <div class="stuff-container">
+        <div class="image-text-div">
+          <h3 class="explanation">The happening?
+            <span class="sub-explanation">A highly esteemed art conference, for the week</span>
+          </h3>
+        </div>
+        <div class="buttons-container">
+          <button mat-raised-button class="button-yes" color="primary" [disabled]="fristSlideDisabled">
+            Show me more!
+          </button>
+          <button mat-button class="button-no" color="disabled" [disabled]="firstSlideDisabled" (click)="noClick()">
+            Not interested
+          </button>
+        </div>
+      </div>
+    </div>
+    <div [@secondStateFlyIn]="secondSlideState" [ngStyle]="{ 'z-index': secondZindex }" class=second-slide-div>
+      <div class="image-div">
+        <img class="show-image img-effect" src="../../assets/images/eilat2.jpg" />
+      </div>
+      <div [@firstSubStateFlyIn]="firstSubSlideState" class="stuff-container" [ngStyle]="{ 'z-index': firstSubZindex }">
+        <div class="image-text-div">
+          <h3 class="explanation">The happening?
+            <span class="sub-explanation">A jazz festival, for the weekend</span>
+          </h3>
+        </div>
+        <div class="buttons-container">
+          <button mat-raised-button class="button-yes" [disabled]="secondSlideDisabled" color="primary" (click)="yesClick()">
+            Show me more!
+          </button>
+          <button mat-button class="button-no" [disabled]="secondSlideDisabled" color="disabled">
+            Not interested
+          </button>
+        </div>
+      </div>
+      <div class="fade-in-text">
+        <h1 [@textFadeIn]="firstTextState" class="text1">Eilat,&nbsp;&nbsp;</h1>
+        <h1 [@secondTextFadeIn]="secondTextState" class="text2">Israel</h1>
+      </div>
+      <div [@secondSubStateFlyIn]="secondSubSlideState" class="stuff-container" [ngStyle]="{ 'z-index': secondSubZindex }">
+        <div class="image-text-div">
+          <p class="explanation small first">What?
+            <span class="sub-explanation"> The annual Red Sea Jazz festival, including the Yilian Cañizares Quintet. The sweet sounds are being held in
+              the warm, hospitable Israelian city of Eilat. <u>Read user reviews of Eilat (14)</u>
+            </span>
+          </p>
+          <p class="explanation small">When?
+            <span class="sub-explanation">5-7 of January 2018
+            </span>
+          </p>
+          <p class="explanation small">Forecast?
+            <span class="sub-explanation"> Sunny, 27 degrees celcius.
+            </span>
+          </p>
+        </div>
+        <div class="buttons-container">
+          <a mat-raised-button class="button-yes" color="primary" href="https://www.finnair.com/fi/fi/destinations/middle-east/israel/eilat">
+            Book the flight!
+          </a>
+          <button mat-button class="button-no" color="disabled">
+            Nah..
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-div">
+  </div>
+</div>

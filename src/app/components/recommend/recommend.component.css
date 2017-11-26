@@ -1,0 +1,158 @@
+.main-container {
+  padding-top: 6rem;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.788);
+}
+
+.slide-container {
+  height: 55rem;
+}
+
+.first-slide-div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.second-slide-div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.fade-in-text {
+  width: 55rem;
+  text-align: right;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 1.8rem;
+  color: rgba(235, 235, 235, 0.929);
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: -11rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  z-index: 2;
+}
+
+.text1 {
+  font-weight: bold;
+}
+
+.text2 {
+  color: rgba(255, 253, 253, 0.829);
+  font-style: italic;
+}
+
+.text-container {
+  display: flex;
+}
+
+.title-container {
+  display: flex;
+  font-size: 1.3rem;
+  width: 60rem;
+  margin: auto;
+  color: rgb(97, 97, 143);
+}
+
+.subheading-container {
+  display: flex;
+  margin: auto;
+  margin-top: -3.8rem;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #0D1973;
+  width: 60rem;
+  justify-content: flex-start;
+}
+
+.image-div {
+  margin: auto;
+  font-size: 1.3rem;
+  padding: 1rem;
+  text-align: center;
+  width: 56rem;
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgb(97, 97, 143);
+  color: #0D1973;
+  margin-bottom: 1rem;
+}
+
+.image-text-div {
+  margin: auto;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+  text-align: left;
+  color: rgb(97, 97, 143);
+  width: 56rem;
+}
+
+.image-text-div>h3 {
+  font-size: 2rem;
+}
+
+.sub-explanation {
+  color: #0D1973;
+}
+
+.show-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.stuff-container {
+  margin-top: -5rem;
+  display: flex;
+  flex-direction: row;
+  max-width: 58rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.button-yes {
+  font-size: 1.2rem;
+  margin-top: 0.6rem;
+}
+
+.button-no {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.img-effect {
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.img-effect:before,
+.img-effect:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  border-radius: 100px / 10px;
+}
+
+.empty-div {
+  padding: 2rem;
+}
